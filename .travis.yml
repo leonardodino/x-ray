@@ -6,3 +6,5 @@ node_js:
   - "8"
 script: npm run-script pretest && npm run-script coveralls
 after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+notifications:
+  email: false
